@@ -36,7 +36,7 @@
                 NSData *data = [[NSData alloc] initWithBytes:buffer length:count];
                 NSString *result = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
                 if (![result isEqualToString:@"OK"]) {
-                    status = -1;  // Code doesn't matter
+                    status = -1;  // Code doesn't matter, just not errAuthorizationSuccess
                 }
             }
         }
